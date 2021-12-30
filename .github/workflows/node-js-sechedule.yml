@@ -1,16 +1,17 @@
-name: sechedule-events
+--
+  name: sechedule-events
 
-  on:
-    push:
-      branches: [ master ]
-    pull_request:
-      branches: [ master ]
-    sehedule: 
-    - cron: 2 * * * *   
+   on:
+     push:
+       branches: [ master ]
+     pull_request:
+       branches: [ master ]
+     sehedule: 
+     - cron: 2 * * * *   
 
-  jobs:
-    build:
-      runs-on: winserver
+   jobs:
+     build:
+       runs-on: winserver
 
       steps:
     - uses: actions/checkout@v2
