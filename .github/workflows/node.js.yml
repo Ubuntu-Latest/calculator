@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: winserver
+    runs-on: self-runner
 
     strategy:
       matrix:
