@@ -38,10 +38,11 @@ deploy:
 runs-on: my-label
 needs: build  
     
-    steps:
+steps:
+    
     - name: Download a Build Artifact
-        uses: actions/download-artifact@v2.1.0
-        with:
+      uses: actions/download-artifact@v2.1.0
+      with:
           name: Deepspace-artifact
 
           path: C:\Users\subharanjano\Documents\New folder
